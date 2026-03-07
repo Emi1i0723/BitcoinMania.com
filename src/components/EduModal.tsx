@@ -30,14 +30,12 @@ export function EduModal({ topic, isOpen, onClose }: EduModalProps) {
       if (!isOpen) return;
       setLoading(true);
       
-      // Intentar cargar contenido estático primero según el idioma actual
       if (STATIC_EDU_CONTENT[topic.id]) {
         setData(STATIC_EDU_CONTENT[topic.id][language]);
         setLoading(false);
         return;
       }
 
-      // Si no hay estático, usar IA
       try {
         const result = await generateSimplifiedCryptoContent({ topic: topic.name });
         setData(result);
@@ -68,7 +66,7 @@ export function EduModal({ topic, isOpen, onClose }: EduModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-2xl bg-card border-primary/20 h-[80vh] flex flex-col p-0 overflow-hidden rounded-3xl relative">
+      <DialogContent className="max-w-2xl bg-card border-primary/20 h-[80vh] flex flex-col p-0 overflow-hidden rounded-3xl">
         <DialogHeader className="p-6 border-b border-white/5 bg-gradient-to-r from-primary/10 to-transparent">
           <div className="flex items-center justify-between mb-2">
             <DialogTitle className="text-2xl font-bold flex items-center gap-2">
@@ -193,7 +191,6 @@ export function EduModal({ topic, isOpen, onClose }: EduModalProps) {
             </ScrollArea>
           ) : null}
 
-          {/* Miniaturized Video Overlay */}
           {showVideo && (
             <div className="absolute bottom-4 right-4 z-50 w-64 aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 animate-in slide-in-from-right-4 duration-300 group">
               <Button
