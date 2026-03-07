@@ -34,11 +34,15 @@ export function CryptoCalc() {
     const val = parseFloat(compAmount) || 0;
     const priceFrom = CRYPTO_PRICES[compFrom as keyof typeof CRYPTO_PRICES].price;
     const priceTo = CRYPTO_PRICES[compTo as keyof typeof CRYPTO_PRICES].price;
+    if (!priceTo) return 0;
     return (val * priceFrom) / priceTo;
   };
 
   const conversions = getConversion();
   const comparison = getComparison();
+
+  // Formatear el resultado para quitar ceros innecesarios (ej. 34.0000 -> 34)
+  const formattedComparison = Number(comparison.toFixed(4)).toString();
 
   return (
     <Card className="glass-card hover-glow border-accent/20">
@@ -139,7 +143,7 @@ export function CryptoCalc() {
             <div className="mt-6 flex flex-col items-center justify-center p-6 rounded-2xl bg-gradient-to-r from-primary/10 to-accent/10 border border-white/5">
                <p className="text-sm text-muted-foreground mb-2">{compAmount} {compFrom} is equal to</p>
                <div className="flex items-center gap-4">
-                 <span className="text-4xl font-extrabold text-primary">{comparison.toFixed(4)}</span>
+                 <span className="text-4xl font-extrabold text-primary">{formattedComparison}</span>
                  <span className="text-2xl font-bold text-accent">{compTo}</span>
                </div>
             </div>
