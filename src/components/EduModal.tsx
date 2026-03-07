@@ -6,7 +6,7 @@ import { useLanguage } from '@/components/LanguageContext';
 import { generateSimplifiedCryptoContent, GenerateSimplifiedCryptoContentOutput } from '@/ai/flows/generate-simplified-crypto-content-flow';
 import { STATIC_EDU_CONTENT } from '@/app/lib/constants';
 import { Button } from '@/components/ui/button';
-import { Loader2, Sparkles, Languages, CheckCircle2, ChevronRight, ChevronLeft, RotateCcw } from 'lucide-react';
+import { Loader2, Sparkles, Languages, CheckCircle2, ChevronRight, ChevronLeft, RotateCcw, Video, X } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
@@ -23,6 +23,7 @@ export function EduModal({ topic, isOpen, onClose }: EduModalProps) {
   const [currentFlashcard, setCurrentFlashcard] = useState(0);
   const [showFlashcardAnswer, setShowFlashcardAnswer] = useState(false);
   const [completed, setCompleted] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
     async function loadContent() {
@@ -67,22 +68,33 @@ export function EduModal({ topic, isOpen, onClose }: EduModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-2xl bg-card border-primary/20 h-[80vh] flex flex-col p-0 overflow-hidden rounded-3xl">
+      <DialogContent className="max-w-2xl bg-card border-primary/20 h-[80vh] flex flex-col p-0 overflow-hidden rounded-3xl relative">
         <DialogHeader className="p-6 border-b border-white/5 bg-gradient-to-r from-primary/10 to-transparent">
           <div className="flex items-center justify-between mb-2">
             <DialogTitle className="text-2xl font-bold flex items-center gap-2">
               <Sparkles className="text-primary w-6 h-6" />
               {topic.name}
             </DialogTitle>
-            <Button 
-              variant="ghost" 
-              size="sm" 
-              onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
-              className="gap-2 text-muted-foreground hover:text-primary"
-            >
-              <Languages className="w-4 h-4" />
-              {language.toUpperCase()}
-            </Button>
+            <div className="flex items-center gap-2">
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                onClick={() => setShowVideo(!showVideo)}
+                className={`gap-2 ${showVideo ? 'text-primary bg-primary/10' : 'text-muted-foreground'} hover:text-primary rounded-full px-4`}
+              >
+                <Video className="w-4 h-4" />
+                {t.lsm}
+              </Button>
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
+                className="gap-2 text-muted-foreground hover:text-primary rounded-full px-4"
+              >
+                <Languages className="w-4 h-4" />
+                {language.toUpperCase()}
+              </Button>
+            </div>
           </div>
         </DialogHeader>
 
@@ -180,6 +192,29 @@ export function EduModal({ topic, isOpen, onClose }: EduModalProps) {
               </Tabs>
             </ScrollArea>
           ) : null}
+
+          {/* Miniaturized Video Overlay */}
+          {showVideo && (
+            <div className="absolute bottom-4 right-4 z-50 w-64 aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 animate-in slide-in-from-right-4 duration-300 group">
+              <Button
+                size="icon"
+                variant="ghost"
+                className="absolute top-1 right-1 h-6 w-6 rounded-full bg-black/50 text-white hover:bg-black/80 z-10 opacity-0 group-hover:opacity-100 transition-opacity"
+                onClick={() => setShowVideo(false)}
+              >
+                <X className="w-3 h-3" />
+              </Button>
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/BB7s499Jbfk?autoplay=1"
+                title="LSM Accessibility Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          )}
         </div>
       </DialogContent>
     </Dialog>

@@ -32,6 +32,7 @@ interface TranslationSet {
   flip: string;
   congrats: string;
   restart: string;
+  lsm: string;
 }
 
 const translations: Record<Language, TranslationSet> = {
@@ -63,6 +64,7 @@ const translations: Record<Language, TranslationSet> = {
     flip: 'Flip Card',
     congrats: 'Well done!',
     restart: 'Try again',
+    lsm: 'LSM',
   },
   es: {
     welcome: 'Bienvenido a CryptoMania',
@@ -92,6 +94,7 @@ const translations: Record<Language, TranslationSet> = {
     flip: 'Girar Carta',
     congrats: '¡Muy bien!',
     restart: 'Reintentar',
+    lsm: 'LSM',
   },
 };
 
