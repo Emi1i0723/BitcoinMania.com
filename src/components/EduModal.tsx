@@ -29,9 +29,9 @@ export function EduModal({ topic, isOpen, onClose }: EduModalProps) {
       if (!isOpen) return;
       setLoading(true);
       
-      // Intentar cargar contenido estático primero
+      // Intentar cargar contenido estático primero según el idioma actual
       if (STATIC_EDU_CONTENT[topic.id]) {
-        setData(STATIC_EDU_CONTENT[topic.id]);
+        setData(STATIC_EDU_CONTENT[topic.id][language]);
         setLoading(false);
         return;
       }
@@ -47,7 +47,7 @@ export function EduModal({ topic, isOpen, onClose }: EduModalProps) {
       }
     }
     loadContent();
-  }, [isOpen, topic.id, topic.name]);
+  }, [isOpen, topic.id, topic.name, language]);
 
   const handleNextFlashcard = () => {
     if (!data) return;
