@@ -5,7 +5,7 @@ export const CRYPTO_PRICES = {
 };
 
 export const EXCHANGE_RATES = {
-  USD_TO_MXN: 17.50,
+  USD_TO_MXN: 17.79,
 };
 
 export const EDU_TOPICS = {
