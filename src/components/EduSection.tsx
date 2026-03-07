@@ -30,7 +30,7 @@ export function EduSection() {
         <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle className="text-xl font-bold flex items-center gap-2">
             <BookOpen className="text-primary w-5 h-5" />
-            {t.eduBasics}
+            {language === 'es' ? 'Todo lo que necesitas saber del mundo crypto' : t.eduBasics}
           </CardTitle>
           <Badge variant="outline" className="border-primary text-primary">EDU</Badge>
         </CardHeader>
@@ -62,7 +62,7 @@ export function EduSection() {
         <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle className="text-xl font-bold flex items-center gap-2">
             <Newspaper className="text-accent w-5 h-5" />
-            {t.eduNews}
+            {language === 'es' ? 'Novedades' : t.eduNews}
           </CardTitle>
           <Badge variant="outline" className="border-accent text-accent">NEW</Badge>
         </CardHeader>

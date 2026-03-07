@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { useLanguage } from '@/components/LanguageContext';
 import { generateSimplifiedCryptoContent, GenerateSimplifiedCryptoContentOutput } from '@/ai/flows/generate-simplified-crypto-content-flow';
+import { STATIC_EDU_CONTENT } from '@/app/lib/constants';
 import { Button } from '@/components/ui/button';
 import { Loader2, Sparkles, Languages, CheckCircle2, ChevronRight, ChevronLeft, RotateCcw } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -27,6 +28,15 @@ export function EduModal({ topic, isOpen, onClose }: EduModalProps) {
     async function loadContent() {
       if (!isOpen) return;
       setLoading(true);
+      
+      // Intentar cargar contenido estático primero
+      if (STATIC_EDU_CONTENT[topic.id]) {
+        setData(STATIC_EDU_CONTENT[topic.id]);
+        setLoading(false);
+        return;
+      }
+
+      // Si no hay estático, usar IA
       try {
         const result = await generateSimplifiedCryptoContent({ topic: topic.name });
         setData(result);
@@ -37,7 +47,7 @@ export function EduModal({ topic, isOpen, onClose }: EduModalProps) {
       }
     }
     loadContent();
-  }, [isOpen, topic.name]);
+  }, [isOpen, topic.id, topic.name]);
 
   const handleNextFlashcard = () => {
     if (!data) return;
@@ -93,7 +103,7 @@ export function EduModal({ topic, isOpen, onClose }: EduModalProps) {
 
                 <TabsContent value="explanation" className="space-y-4 animate-in slide-in-from-bottom-2 duration-300">
                   <div className="prose prose-invert max-w-none">
-                    <p className="text-lg leading-relaxed text-foreground/90 bg-primary/5 p-6 rounded-2xl border border-primary/10">
+                    <p className="text-lg leading-relaxed text-foreground/90 bg-primary/5 p-6 rounded-2xl border border-primary/10 whitespace-pre-wrap">
                       {data.explanation}
                     </p>
                   </div>
