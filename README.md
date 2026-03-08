@@ -64,7 +64,7 @@ Simulación Financiera: Herramientas de cálculo de alto rendimiento que permite
 
 ## 👥 Equipo
 Main Developer. Emilio Alfredo Cervera Uicab
-Dashboard and simulation developer. Alfredo
+Dashboard and simulation developer. Alfredo gonzalez Galicia
 Proyecto desarrollado de forma intensiva para el HackathonBitcoin.com 2026, enfocado en usabilidad, accesibilidad y educación financiera.
 
 ---
