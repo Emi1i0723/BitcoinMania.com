@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Optimize compilation by transpiling common heavy libraries
+  transpilePackages: ['lucide-react', 'recharts'],
   images: {
     remotePatterns: [
       {
@@ -30,6 +32,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Prevent Turbopack/Webpack from trying to bundle heavy server-side AI libraries for the client
+  serverExternalPackages: ['genkit', '@genkit-ai/google-genai', '@genkit-ai/googleai'],
 };
 
 export default nextConfig;
