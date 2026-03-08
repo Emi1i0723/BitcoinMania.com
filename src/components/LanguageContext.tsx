@@ -33,6 +33,7 @@ interface TranslationSet {
   congrats: string;
   restart: string;
   lsm: string;
+  aboutUs: string;
 }
 
 const translations: Record<Language, TranslationSet> = {
@@ -65,6 +66,7 @@ const translations: Record<Language, TranslationSet> = {
     congrats: 'Well done!',
     restart: 'Try again',
     lsm: 'LSM',
+    aboutUs: 'About Us',
   },
   es: {
     welcome: 'Bienvenido a BitcoinMania',
@@ -95,6 +97,7 @@ const translations: Record<Language, TranslationSet> = {
     congrats: '¡Muy bien!',
     restart: 'Reintentar',
     lsm: 'LSM',
+    aboutUs: 'Sobre Nosotros',
   },
 };
 

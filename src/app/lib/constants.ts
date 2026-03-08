@@ -8,6 +8,49 @@ export const EXCHANGE_RATES = {
   USD_TO_MXN: 17.79,
 };
 
+export const ABOUT_US_CONTENT = {
+  es: {
+    title: "📖 Sobre Nosotros",
+    content: `BitcoinMania.com es un proyecto nacido en el corazón del primer Hackathon Educativo de Bitcoin en México celebrado desde el 6 de marzo hasta el 8 de marzo del 2026 cuyo objetivo es construir, desarrollar o crear herramientas que enseñen y promuevan la educación de Bitcoin a México y ante tal demanda, nace Bitcomania.com como respuesta directa a la brecha de información financiera y de cultura del Bitcoin en México. Somos un equipo convencido de que la soberanía financiera no debería estar limitada por el idioma o la complejidad técnica.
+
+Nuestra Misión
+Transformar la manera en que el ciudadano mexicano percibe y utiliza Bitcoin. Ante un mercado saturado de términos complejos en inglés y percepciones negativas sobre el ecosistema "crypto" generalizado, decidimos enfocarnos en el activo más robusto y probado: Bitcoin.
+Creemos que la educación es la mejor herramienta contra la incertidumbre económica. Por ello, hemos diseñado un ecosistema "All-in-One" que combina herramientas de cálculo de alta precisión con una ruta educativa gamificada, permitiendo que tanto novatos como expertos tomen decisiones basadas en datos y conocimiento real, alejándolos de la especulación.
+
+¿Por qué BitcoinMania?
+• Identidad y Confianza: Priorizamos el término Bitcoin para distanciarnos de las connotaciones negativas asociadas a otros activos digitales volátiles.
+• Accesibilidad: Contenido curado, adaptado y traducido al español con analogías locales para facilitar la comprensión.
+• Transparencia: Herramientas de simulación que permiten al usuario entender el riesgo y el rendimiento antes de comprometer su capital.
+
+El Equipo
+En BitcoinMania somos un equipo comprometido en brindar la mejor experiencia educativa al alcance de cualquier usuario mexicano. Unidos por la metodología Vibe Coding y la asistencia de Inteligencia Artificial (Gemini & Genkit), hemos desarrollado esta plataforma con un enfoque User-Centric, priorizando la transparencia y la ética educativa.
+
+📫 ¡Contáctanos!
+• LinkedIn: www.linkedin.com/in/emilio-cervera
+• YouTube: https://www.youtube.com/@AstralKin`
+  },
+  en: {
+    title: "📖 About Us",
+    content: `BitcoinMania.com is a project born in the heart of the first Bitcoin Educational Hackathon in Mexico, held from March 6 to March 8, 2026. Its goal is to build, develop, or create tools that teach and promote Bitcoin education in Mexico. In response to this demand, BitcoinMania.com was born as a direct answer to the financial information gap and Bitcoin culture in Mexico. We are a team convinced that financial sovereignty should not be limited by language or technical complexity.
+
+Our Mission
+Transforming the way Mexican citizens perceive and use Bitcoin. In a market saturated with complex terms in English and negative perceptions of the generalized "crypto" ecosystem, we decided to focus on the most robust and proven asset: Bitcoin.
+We believe education is the best tool against economic uncertainty. Therefore, we have designed an "All-in-One" ecosystem that combines high-precision calculation tools with a gamified educational path, allowing both novices and experts to make decisions based on real data and knowledge, keeping them away from speculation.
+
+Why BitcoinMania?
+• Identity and Trust: We prioritize the term Bitcoin to distance ourselves from the negative connotations associated with other volatile digital assets.
+• Accessibility: Curated content, adapted and translated into Spanish with local analogies to facilitate understanding.
+• Transparency: Simulation tools that allow users to understand risk and return before committing their capital.
+
+The Team
+At BitcoinMania, we are a team committed to providing the best educational experience within reach of any Mexican user. United by the Vibe Coding methodology and the assistance of Artificial Intelligence (Gemini & Genkit), we have developed this platform with a User-Centric focus, prioritizing transparency and educational ethics.
+
+📫 Contact Us!
+• LinkedIn: www.linkedin.com/in/emilio-cervera
+• YouTube: https://www.youtube.com/@AstralKin`
+  }
+};
+
 export const EDU_TOPICS = {
   basics: [
     { id: 'what-is-crypto', en: 'What is a Cryptocurrency?', es: '¿Qué es una Criptomoneda?' },
@@ -169,7 +212,7 @@ export const STATIC_EDU_CONTENT: Record<string, Record<'en' | 'es', EduContent>>
       flashcards: [
         { question: "¿Qué plataforma se recomienda para ver precios en Pesos Mexicanos (MXN)?", answer: "CoinGecko." },
         { question: "¿Cuál es la ventaja de la aplicación de CoinMarketCap?", answer: "Permite crear una 'Watchlist' para seguir tus monedas favoritas." },
-        { question: "¿Para qué sirve DEX Screener?", answer: "Para rastrear monedas nuevas en intercambios descentralizados antes de que lleguen a las masas." }
+        { question: "¿Para qué sirve DEX Screener?", answer: "Para rastrear monedas nuevas en intercambios descentralizados antes de que lleguen al puerto principal." }
       ]
     },
     en: {

@@ -5,6 +5,7 @@ import { useLanguage } from '@/components/LanguageContext';
 import { PriceMonitor } from '@/components/PriceMonitor';
 import { CryptoCalc } from '@/components/CryptoCalc';
 import { EduSection } from '@/components/EduSection';
+import { AboutUsModal } from '@/components/AboutUsModal';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
@@ -117,6 +118,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-2 md:gap-4">
+            <AboutUsModal />
             <Button 
               variant="ghost" 
               size="sm" 
