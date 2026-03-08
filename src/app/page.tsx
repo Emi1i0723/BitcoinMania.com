@@ -50,7 +50,7 @@ export default function Home() {
             <div className="w-16 h-16 bg-primary rounded-2xl mx-auto flex items-center justify-center shadow-lg shadow-primary/40 rotate-12 hover:rotate-0 transition-transform duration-300">
               <Sparkles className="w-10 h-10 text-white" />
             </div>
-            <h1 className="text-4xl font-extrabold tracking-tight text-white mt-4">CryptoMania</h1>
+            <h1 className="text-4xl font-extrabold tracking-tight text-white mt-4">BitcoinMania</h1>
             <p className="text-muted-foreground">{t.welcome}</p>
           </div>
 
@@ -113,7 +113,7 @@ export default function Home() {
             <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/30">
               <Sparkles className="w-6 h-6 text-white" />
             </div>
-            <span className="text-2xl font-black tracking-tighter text-white">CRYPTOMANIA</span>
+            <span className="text-2xl font-black tracking-tighter text-white">BITCOINMANIA</span>
           </div>
 
           <div className="flex items-center gap-2 md:gap-4">

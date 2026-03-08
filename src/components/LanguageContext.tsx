@@ -37,14 +37,14 @@ interface TranslationSet {
 
 const translations: Record<Language, TranslationSet> = {
   en: {
-    welcome: 'Welcome to CryptoMania',
+    welcome: 'Welcome to BitcoinMania',
     login: 'Login',
     signup: 'Sign Up',
     logout: 'Logout',
     dashboard: 'Dashboard',
     priceMonitor: 'Price Monitor',
     cryptoCalc: 'CryptoCALC',
-    eduTitle: 'CryptoMania EDU',
+    eduTitle: 'BitcoinMania EDU',
     eduBasics: 'Everything you need to know',
     eduNews: "What's New",
     loading: 'Generating AI Content...',
@@ -67,14 +67,14 @@ const translations: Record<Language, TranslationSet> = {
     lsm: 'LSM',
   },
   es: {
-    welcome: 'Bienvenido a CryptoMania',
+    welcome: 'Bienvenido a BitcoinMania',
     login: 'Iniciar Sesión',
     signup: 'Registrarse',
     logout: 'Cerrar Sesión',
     dashboard: 'Tablero',
     priceMonitor: 'Monitor de Precios',
     cryptoCalc: 'CryptoCALC',
-    eduTitle: 'CryptoMania EDU',
+    eduTitle: 'BitcoinMania EDU',
     eduBasics: 'Todo lo que necesitas saber',
     eduNews: 'Novedades',
     loading: 'Generando contenido IA...',

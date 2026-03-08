@@ -4,7 +4,7 @@ import { LanguageProvider } from '@/components/LanguageContext';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'CryptoMania - Modern Crypto Education',
+  title: 'BitcoinMania - Modern Crypto Education',
   description: 'Master the world of digital finance with AI-powered education and real-time monitoring.',
 };
 
