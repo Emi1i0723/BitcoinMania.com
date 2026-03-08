@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useLanguage } from '@/components/LanguageContext';
 import { PriceMonitor } from '@/components/PriceMonitor';
 import { CryptoCalc } from '@/components/CryptoCalc';
+import { BitcoinLab } from '@/components/BitcoinLab';
 import { EduSection } from '@/components/EduSection';
 import { AboutUsModal } from '@/components/AboutUsModal';
 import { Button } from '@/components/ui/button';
@@ -162,8 +163,9 @@ export default function Home() {
           <div className="lg:col-span-1">
             <PriceMonitor />
           </div>
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 space-y-6">
             <CryptoCalc />
+            <BitcoinLab />
           </div>
         </div>
 
@@ -177,7 +179,7 @@ export default function Home() {
                <h3 className="text-2xl font-bold">{t.eduTitle}</h3>
              </div>
           </div>
-          <EduSection />
+          < EduSection />
         </section>
       </main>
 

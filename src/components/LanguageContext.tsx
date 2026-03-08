@@ -34,6 +34,9 @@ interface TranslationSet {
   restart: string;
   lsm: string;
   aboutUs: string;
+  bitcoinLab: string;
+  bitcoinLabDesc: string;
+  accessLab: string;
 }
 
 const translations: Record<Language, TranslationSet> = {
@@ -67,6 +70,9 @@ const translations: Record<Language, TranslationSet> = {
     restart: 'Try again',
     lsm: 'LSM',
     aboutUs: 'About Us',
+    bitcoinLab: 'BitcoinLAB',
+    bitcoinLabDesc: 'Interactive virtual environment where you can simulate the experience of investing in Bitcoin',
+    accessLab: 'Access Simulator',
   },
   es: {
     welcome: 'Bienvenido a BitcoinMania',
@@ -98,6 +104,9 @@ const translations: Record<Language, TranslationSet> = {
     restart: 'Reintentar',
     lsm: 'LSM',
     aboutUs: 'Sobre Nosotros',
+    bitcoinLab: 'BitcoinLAB',
+    bitcoinLabDesc: 'Entorno virtual interactivo donde puedes simular la experiencia de invertir en Bitcoin',
+    accessLab: 'Acceder al Simulador',
   },
 };
 
