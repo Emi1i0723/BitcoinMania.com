@@ -76,6 +76,27 @@ Link:https://www.youtube.com/watch?v=k0R0wjdHqw4&t=10s
 
 ---
 
-Proyecto desarrollado de forma intensiva para el HackathonBitcoin.com 2026, enfocado en usabilidad, accesibilidad y educación financiera.
+## 📖 About US
 
-*Desarrollado con criterio y ❤️ para México.*
+**BitcoinMania.com** es un proyecto nacido en el corazón del primer **Hackathon Educativo de Bitcoin en México**, celebrado del 6 al 8 de marzo de 2026. cuyo objetivo es construir y desarrollar herramientas que enseñen y promuevan la educación de Bitcoin en México; ante tal demanda, nace **BitcoinMania.com** como una respuesta directa a la brecha de información financiera y de cultura del Bitcoin en nuestro país. Somos un equipo convencido de que la soberanía financiera no debería estar limitada por el idioma o la complejidad técnica.
+
+### Nuestra Misión
+Transformar la manera en que el ciudadano mexicano percibe y utiliza Bitcoin. Ante un mercado saturado de términos complejos en inglés y percepciones negativas sobre el ecosistema "crypto" generalizado, decidimos enfocarnos en el activo más robusto y probado: **Bitcoin**. 
+
+Creemos que la educación es la mejor herramienta contra la incertidumbre económica. Por ello, hemos diseñado un ecosistema **"All-in-One"** que combina herramientas de cálculo y simulaciónde alta precisión con una ruta educativa gamificada, permitiendo que tanto novatos como expertos tomen decisiones basadas en datos y conocimiento real, alejándolos de la especulación.
+
+### ¿Por qué BitcoinMania?
+
+* **Identidad y Confianza:** Priorizamos el término Bitcoin para distanciarnos de las connotaciones negativas asociadas a otros activos digitales volátiles.
+* **Accesibilidad:** Contenido curado, adaptado y traducido al español con analogías locales para facilitar la comprensión.
+* **Transparencia:** Herramientas de simulación que permiten al usuario entender el riesgo y el rendimiento antes de comprometer su capital.
+
+### El Equipo
+En **BitcoinMania** somos un equipo comprometido en brindar la mejor experiencia educativa al alcance de cualquier usuario mexicano. Unidos por la metodología **Vibe Coding** y la asistencia de Inteligencia Artificial (**Gemini & Genkit**), hemos desarrollado esta plataforma con un enfoque *User-Centric*, priorizando la transparencia y la ética educativa.
+
+---
+
+### 📫 ¡Contáctanos! 
+
+* **LinkedIn:** [emilio-cervera](https://www.linkedin.com/in/emilio-cervera)
+* **YouTube:** [AstralKin](https://www.youtube.com/@AstralKin_)
