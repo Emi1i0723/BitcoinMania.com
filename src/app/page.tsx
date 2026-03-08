@@ -148,12 +148,12 @@ export default function Home() {
               <LayoutDashboard className="w-3 h-3" />
               {t.dashboard}
             </div>
-            <h2 className="text-4xl font-extrabold tracking-tight text-white">{language === 'es' ? 'Hola de nuevo!' : 'Hello again!'}</h2>
+            <h2 className="text-4xl font-extrabold tracking-tight text-white">{language === 'es' ? '¡Hola de nuevo!' : 'Hello again!'}</h2>
           </div>
           <p className="text-muted-foreground max-w-md">
             {language === 'es' 
-              ? 'Tu puerta de entrada al aprendizaje simplificado de criptomonedas y análisis de mercado en tiempo real.' 
-              : 'Your gateway to simplified cryptocurrency learning and real-time market insights.'}
+              ? 'Tu puerta de entrada hacia el mundo Bitcoin y tus primeros pasos al ecosistema Altcoin' 
+              : 'Your gateway to the Bitcoin world and your first steps into the Altcoin ecosystem.'}
           </p>
         </header>
 
