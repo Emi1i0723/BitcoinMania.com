@@ -13,6 +13,7 @@ export const EDU_TOPICS = {
     { id: 'what-is-crypto', en: 'What is a Cryptocurrency?', es: '¿Qué es una Criptomoneda?' },
     { id: 'best-cryptos', en: 'Best Cryptos in current market', es: 'Las mejores criptomonedas del mercado actual' },
     { id: 'exchange-vs-wallet', en: 'Differences: Exchange vs Wallet', es: 'Diferencias entre un Exchange y una wallet' },
+    { id: 'bitcoin-dominance', en: 'Bitcoin Dominance: 5 Competitive Advantages', es: 'El Dominio de Bitcoin: 5 Ventajas Competitivas sobre las demás criptomonedas.' },
   ],
   news: [
     { id: 'pros-cons', en: 'Pros and Cons of Crypto world', es: 'Ventajas y desventajas del mundo Crypto' },
@@ -42,7 +43,7 @@ export const STATIC_EDU_CONTENT: Record<string, Record<'en' | 'es', EduContent>>
       ]
     },
     en: {
-      explanation: "It is a form of decentralized digital money that uses cryptography (advanced mathematics) to ensure secure transactions. Unlike the Mexican peso or the US dollar, they do not depend on a central bank or government; they operate through a global computer network that validates every movement, ensuring that no one can counterfeit them or spend the same money twice.\n\nYou should keep in mind that before starting your venture in the crypto world, we recommend you take into high consideration that the amount invested should ALWAYS be money that you do not need or that is not part of the economic capital you use to subsist, and always take into account both sides of the coin. Below we present a list of 5 advantages and 5 disadvantages of investing in cryptocurrencies today.",
+      explanation: "It is a form of decentralized digital money that uses cryptography (advanced mathematics) to ensure secure translations. Unlike the Mexican peso or the US dollar, they do not depend on a central bank or government; they operate through a global computer network that validates every movement, ensuring that no one can counterfeit them or spend the same money twice.\n\nYou should keep in mind that before starting your venture in the crypto world, we recommend you take into high consideration that the amount invested should ALWAYS be money that you do not need or that is not part of the economic capital you use to subsist, and always take into account both sides of the coin. Below we present a list of 5 advantages and 5 disadvantages of investing in cryptocurrencies today.",
       analogies: [
         "It is like a digital ledger that everyone can see but no one can erase.",
         "Like gold, but digital and easy to send anywhere in the world instantly."
@@ -181,6 +182,32 @@ export const STATIC_EDU_CONTENT: Record<string, Record<'en' | 'es', EduContent>>
         { question: "Which platform is recommended for viewing prices in Mexican Pesos (MXN)?", answer: "CoinGecko." },
         { question: "What is the advantage of the CoinMarketCap app?", answer: "It allows you to create a 'Watchlist' to follow your favorite coins." },
         { question: "What is DEX Screener used for?", answer: "To track new coins on decentralized exchanges before they reach the masses." }
+      ]
+    }
+  },
+  'bitcoin-dominance': {
+    es: {
+      explanation: "La Primacía de Bitcoin: Más allá de la especulación\nEn el escenario actual de marzo de 2026, podemos observar que mientras redes como Ethereum y Solana compiten por la eficiencia en contratos inteligentes, Bitcoin se ha consolidado en una categoría única dentro del ecosistema Altcoin; es decir diferenciarse de las demás criptomonedas de forma contundente. \n\nA continuación, aquí en BitcoinMania.com te presentamos 5 ventajas estructurales del Bitcoin respecto a las demás criptomonedas:\n\n1. Descentralización y Seguridad Inigualable: A diferencia de otras redes que han mostrado vulnerabilidades o paros técnicos, la red de Bitcoin es la infraestructura computacional más segura y descentralizada del planeta. Su protocolo es inmutable, lo que lo convierte en el único activo digital realmente libre de decisiones arbitrarias de fundaciones o desarrolladores.\n\n2. Escasez Matemática Absoluta: Mientras que Ethereum tiene un suministro dinámico y Solana no tiene un tope máximo de emisión definido, Bitcoin tiene un límite de 21 millones. En un mundo de deuda global récord, esta escasez programada lo posiciona como la única \"unidad de cuenta\" definitiva.\n\n3. Resiliencia Institucional y Claridad Regulatoria: Bitcoin es la única divisa digital que ha sido clasificada globalmente como una \"commodity\" (mercancía), lo que le otorga una ventaja legal sobre las altcoins, que aún enfrentan juicios por ser consideradas valores no registrados.\n\n4. Efecto de Red y Liquidez Global: Es la puerta de entrada y salida de todo el capital del mercado. Su liquidez permite que grandes instituciones y gobiernos puedan operar sin desplazar el precio de forma errática, algo que aún es imposible en redes más jóvenes.\n\n5. Simplicidad como Fortaleza: Al no intentar ser una computadora global (como ETH), Bitcoin evita la superficie de ataque que generan los contratos inteligentes complejos. Su enfoque único en la transferencia y reserva de valor lo hace menos propenso a errores de código críticos.\n\nEl \"Efecto Arrastre\": El Impacto de Bitcoin en el Mercado\nBitcoin ejerce una dominancia de mercado (Dominance Index) que actualmente ronda el 58%. El mencionado efecto arrastre genera un impacto psicológico y financiero: cuando Bitcoin se estabiliza, atrae capital hacia el resto del ecosistema; sin embargo, en momentos de crisis, actúa como el \"vórtice de liquidez\" donde todos los inversores buscan refugio, definiendo así la salud macroeconómica de todas las demás criptodivisas.",
+      analogies: [
+        "Bitcoin es el sistema operativo base de las finanzas globales, mientras que las otras son aplicaciones.",
+        "Es como el oro frente a otras monedas: escasez y seguridad por encima de todo."
+      ],
+      flashcards: [
+        { question: "¿Cuál es el límite de emisión de Bitcoin?", answer: "21 millones de unidades." },
+        { question: "¿Por qué Bitcoin tiene mayor claridad regulatoria?", answer: "Es la única divisa digital clasificada globalmente como una 'commodity' (mercancía)." },
+        { question: "¿Qué porcentaje de dominancia de mercado ronda Bitcoin en marzo de 2026?", answer: "Aproximadamente el 58%." }
+      ]
+    },
+    en: {
+      explanation: "Bitcoin Primacy: Beyond Speculation\nIn the current scenario of March 2026, while networks like Ethereum and Solana compete for efficiency in smart contracts, Bitcoin has consolidated itself into a unique category within the Altcoin ecosystem; standing out from other cryptocurrencies in a definitive way.\n\nHere at BitcoinMania.com, we present 5 structural advantages of Bitcoin over other cryptocurrencies:\n\n1. Unmatched Decentralization and Security: Unlike other networks that have shown vulnerabilities or technical halts, Bitcoin's network is the most secure and decentralized computational infrastructure on the planet. Its protocol is immutable, making it the only digital asset truly free from arbitrary decisions by foundations or developers.\n\n2. Absolute Mathematical Scarcity: While Ethereum has dynamic supply and Solana has no defined maximum emission cap, Bitcoin has a limit of 21 million. In a world of record global debt, this programmed scarcity positions it as the only definitive 'unit of account'.\n\n3. Institutional Resilience and Regulatory Clarity: Bitcoin is the only digital currency globally classified as a 'commodity', giving it a legal advantage over altcoins that still face trials for being considered unregistered securities.\n\n4. Network Effect and Global Liquidity: It is the gateway for all market capital. Its liquidity allows large institutions and governments to operate without erratic price shifts, something still impossible for younger networks.\n\n5. Simplicity as Strength: By not trying to be a global computer (like ETH), Bitcoin avoids the attack surface generated by complex smart contracts. Its unique focus on transfer and store of value makes it less prone to critical code errors.\n\nThe 'Dragging Effect': Bitcoin's Market Impact\nBitcoin exerts a market dominance (Dominance Index) currently around 58%. This dragging effect generates a psychological and financial impact: when Bitcoin stabilizes, it attracts capital to the rest of the ecosystem; however, in times of crisis, it acts as the 'liquidity vortex' where all investors seek refuge, thus defining the macroeconomic health of all other cryptocurrencies.",
+      analogies: [
+        "Bitcoin is the base operating system of global finance, while others are apps.",
+        "It's like gold versus other currencies: scarcity and security above all else."
+      ],
+      flashcards: [
+        { question: "What is Bitcoin's emission limit?", answer: "21 million units." },
+        { question: "What legal advantage does Bitcoin have over Altcoins?", answer: "It is the only digital currency globally classified as a 'commodity'." },
+        { question: "What is Bitcoin's market dominance around March 2026?", answer: "Approximately 58%." }
       ]
     }
   }
