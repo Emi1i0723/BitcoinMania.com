@@ -77,6 +77,21 @@ BitcoinMania es una plataforma "All-in-One" diseñada para cerrar la brecha de i
 [cite_start]Un portal educativo dividido en dos pilares estratégicos[cite: 12, 40]:
 1.  [cite_start]**Todo lo que necesitas saber:** Guía paso a paso para principiantes con información actualizada, analogías claras y soporte en español[cite: 41].
 2.  [cite_start]**Novedades:** Espacio para usuarios experimentados con análisis sobre tendencias, proyectos interesantes y el estado actual del mercado[cite: 45, 46].
+---
+
+### 📚 Transparencia y Curación de Contenidos (BitcoinMania EDU)
+
+En **BitcoinMania EDU** nos hemos encargado de procesar información técnica de alto nivel, originalmente en inglés, proveniente de fuentes líderes globales como:
+* **CoinDesk:** Referente mundial en noticias y análisis de activos digitales.
+* **Altcoin Daily:** El canal de YouTube sobre el ecosistema cripto más grande del mundo.
+* **BitcoinOps:** Documentación técnica y operativa avanzada sobre el protocolo Bitcoin.
+
+#### **Nuestro Proceso de Valor Agregado:**
+1. **Traducción y Adaptación:** Disponemos dicha información en español de forma digerible, práctica y adaptada al contexto mexicano.
+2. **Inclusión Total:** Contamos con soporte para **Lengua de Señas Mexicana (LSM)**, eliminando las barreras de comunicación en la educación financiera.
+3. **Validación Práctica:** Aquí no solo adquieres conocimiento; el usuario lo valida mediante un sistema de **gamificación por flashcards** y una ruta de aprendizaje con progresión real que culmina en la experiencia interactiva de **ByteLAB**.
+
+---
 
 ### 🎮 Gamificación
 Validamos el aprendizaje mediante:
