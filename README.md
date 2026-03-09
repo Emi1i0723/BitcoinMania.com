@@ -18,8 +18,23 @@ BitcoinMania es una plataforma "All-in-One" diseñada para cerrar la brecha de i
   - Sistema de **Flashcards Interactivas** para validación de conocimientos.
   - Soporte bilingüe completo (Español/Inglés) en todo el contenido educativo.
   - **Accesibilidad LSM**: Videos integrados en Lengua de Señas Mexicana para inclusión total.
-- **🧪 BitcoinLAB**: Acceso directo a un entorno virtual interactivo para simular inversiones sin riesgo.
-- **📖 Sobre Nosotros**: Conoce nuestra historia nacida en el Hackathon Educativo de Bitcoin 2026.
+- **🧪 ---
+
+### 🧪 ByteLAB: El Futuro de la Experiencia Interactiva
+
+**ByteLAB** es nuestro entorno virtual de experimentación donde la teoría se convierte en acción. Hemos diseñado este espacio para que el usuario pueda dar sus primeros pasos en el ecosistema sin poner en riesgo su capital.
+
+#### **¿Qué ofrece ByteLAB?**
+
+* **Simulador de Inversión Sin Riesgo:** Acceso directo a un entorno virtual interactivo para practicar movimientos de mercado con datos reales, pero sin exposición financiera.
+* **Mapeo de Mercado 360°:** Visualización dinámica del estado de **Bitcoin** frente al resto del mercado y otras criptomonedas relevantes.
+* **Agente AI Consultor:** Implementación de un asistente inteligente que te aconseja y guía con análisis estratégico antes de realizar simulaciones de inversión en Bitcoin.
+* **Ecosistema Formativo Profesional:** Una sección exclusiva con múltiples experiencias educativas de nivel avanzado y técnico.
+* **Certificación de Competencias:** Acceso a nuestro test de validación basado en el contenido de **BitcoinMania EDU**. Al superar el **70% de respuestas correctas**, el sistema emite automáticamente tu **Certificado de Iniciación al Mundo Bitcoin**.
+
+> **Estatus del Proyecto:** Actualmente integrando el motor de Inteligencia Artificial (Gemini) para potenciar el Agente Consultor en tiempo real.
+
+---
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -56,7 +71,7 @@ BitcoinMania es una plataforma "All-in-One" diseñada para cerrar la brecha de i
 ### 📈 Monitoreo y Cálculo
 * [cite_start]**Monitor de Precios:** Visualización elegante del precio de Bitcoin[cite: 2, 27]. [cite_start]*(Nota: En esta versión MVP el precio se mantiene fijo en $68,000 USD por estabilidad de desarrollo, con miras a integrar la API de CoinGecko para actualizaciones cada 30 segundos)*[cite: 6, 27].
 * [cite_start]**CryptoCALC:** Calculadora especializada para convertir Bitcoin (USD) a Pesos Mexicanos (MXN) y realizar comparativas directas con **Ethereum** y **Solana**[cite: 10, 11].
-* [cite_start]**Dashboard Interactivo:** Simulador de inversión que permite a los usuarios observar el rendimiento proyectado de Bitcoin a través del tiempo como si fuera un movimiento real[cite: 32].
+* [cite_start]**ByteLAB:** Simulador de inversión que permite a los usuarios observar el rendimiento proyectado de Bitcoin a través del tiempo como si fuera un movimiento real y más allá [cite: 32].
 
 ### 🎓 BitcoinMania EDU
 [cite_start]Un portal educativo dividido en dos pilares estratégicos[cite: 12, 40]:
@@ -112,7 +127,7 @@ Link:https://www.youtube.com/watch?v=k0R0wjdHqw4&t=10s
 
 ---
 
-## 📖 About US
+## 📖 About US - **Conoce nuestra historia nacida en el Hackathon Educativo de Bitcoin 2026.
 
 **BitcoinMania.com** es un proyecto nacido en el corazón del primer **Hackathon Educativo de Bitcoin en México**, celebrado del 6 al 8 de marzo de 2026. cuyo objetivo es construir y desarrollar herramientas que enseñen y promuevan la educación de Bitcoin en México; ante tal demanda, nace **BitcoinMania.com** como una respuesta directa a la brecha de información financiera y de cultura del Bitcoin en nuestro país. Somos un equipo convencido de que la soberanía financiera no debería estar limitada por el idioma o la complejidad técnica.
 
